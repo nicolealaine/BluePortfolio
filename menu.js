@@ -9,6 +9,11 @@ function myFunction(x) {
   }
 }
 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 document.addEventListener("DOMContentLoaded", function (event) {
   const menu = document.querySelector(".menu");
   const menuItems = document.querySelectorAll(".ham-menu");
@@ -27,6 +32,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
   menuItems.forEach(function (menuItem) {
     menuItem.addEventListener("click", toggleMenu);
   });
+
+  /* Scroll to top button */
+  const topButton = document.querySelector(".top");
+  window.onscroll = function () {
+    scrollFunction();
+   
+  }
+
+  function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+  }
+
 });
 
 
