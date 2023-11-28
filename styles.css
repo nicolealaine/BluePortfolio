@@ -4,7 +4,7 @@
     ;
     --lightGrey: rgb(191, 192, 192);
     --lightPinkShadow: rgb(207, 135, 171);
-    --darkBlue: rgb(1, 26, 67);
+    --darkBlue: #011a43;
     --rightDarkBlue: rgb(15, 30, 67);
     --medBlue: rgb(79, 93, 117);
     --coral: rgb(227, 79, 79);
@@ -344,6 +344,11 @@ nav a:visited {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.skills-blurb {
+    width: 80%;
+    margin: auto;
+}
+
 .hero-links {
     width: 90%;
     margin: auto;
@@ -413,17 +418,117 @@ nav a:visited {
     font-size: 1.2rem;
 }
 
+
+
 .sec-header {
     font-family: "Raleway";
     color: white;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    margin-bottom: 30px;
     font-size: 2rem;
     text-align: center;
     font-weight: 400;
     padding: 1em;
-    text-decoration: underline;
+    /*     text-decoration: underline;
+ */
+    position: relative;
 }
+
+.sec-border {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid rgba(227, 79, 79, .7);
+    animation: circleBubble 3s ease-in-out infinite;
+}
+
+.sec-circle {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid rgba(227, 79, 79, .7);
+}
+
+.sec-circle-skills {
+    animation: circleBubbleSkills 2s .2s ease-in-out infinite;
+
+}
+
+.sec-circle-port {
+    animation: circleBubblePort 2.2s ease-in-out infinite;
+}
+
+.sec-circle-contact {
+    animation: circleBubbleContact 2s ease-in-out infinite;
+}
+
+@keyframes circleBubble {
+    from {
+        transform: scale(1) translateX(30px) translateY(100px);
+    }
+
+    50% {
+        transform: scale(1.11) translateX(30px) translateY(100px);
+    }
+
+    to {
+        transform: scale(1) translateX(30px) translateY(100px);
+    }
+}
+
+@keyframes circleBubbleSkills {
+    from {
+        transform: scale(1) translateX(20px) translateY(-20px);
+    }
+
+    50% {
+        transform: scale(1.11) translateX(10px) translateY(-15px);
+    }
+
+    to {
+        transform: scale(1) translateX(20px) translateY(-20px);
+    }
+}
+
+@keyframes circleBubblePort {
+    from {
+        transform: scale(.95) translateX(10px) translateY(70px);
+    }
+
+
+
+    50% {
+        transform: scale(1)translateX(20px) translateY(60px);
+    }
+
+
+
+    to {
+        transform: scale(.95)translateX(10px) translateY(70px);
+    }
+}
+
+@keyframes circleBubbleContact {
+    from {
+        transform: scale(.95) translateX(-35px) translateY(70px);
+    }
+
+
+
+    50% {
+        transform: scale(1) translateX(-25px) translateY(60px);
+    }
+
+
+
+    to {
+        transform: scale(.95) translateX(-35px) translateY(70px);
+    }
+}
+
 
 .dayNight {
     display: none;
@@ -728,11 +833,7 @@ footer p {
         padding: 1em;
     }
 
-    .skills-blurb {
-        width: 50%;
-        margin: auto;
-        font-size: 1.2rem;
-    }
+
 
     .skills {
         width: 40%;
@@ -768,6 +869,12 @@ footer p {
     .hero h2 {
         font-size: 5rem;
         margin: 1rem;
+    }
+
+    .skills-blurb {
+        width: 50%;
+        margin: auto;
+        font-size: 1.2rem;
     }
 
     .footer-flowers {
