@@ -35,58 +35,64 @@
     <link type="application/atom+xml" rel="alternate" href="" title="Your awesome title" />
     <script src="menu.js"></script>
 
-
 </head>
 
 <body id="page-top">
-    <nav>
-        <ul class="title">
-            <!-- <li><a class="donut-icon menuItem" href="#page-top">&#128000;</a>
-            </li> -->
-            <li><a class="show-title menuItem" href="#page-top">Nicole Crayne</a>
-            </li>
-        </ul>
-        <ul class="menu">
-            <li><a class="menuItem ham-menu home-link" href="#page-top">home</a>
-            </li>
-            <li><a class="menuItem ham-menu" href="#skills">skills</a>
-            </li>
-            <li><a class="menuItem ham-menu" href="#portfolio">portfolio</a>
-            </li>
+    <div class="scroll-top">
 
-            <li><a class="menuItem ham-menu" href="#contact">contact</a>
-            </li>
-            <!--   <li>
+    </div>
+    <nav>
+
+        <div class="menu-wrapper">
+            <div class="title">
+                <a class="show-title menuItem" href="#page-top">NC</a>
+            </div>
+            <ul class="menu">
+                <li><a class="menuItem ham-menu home-link" href="#page-top">home</a>
+                </li>
+                <li><a class="menuItem ham-menu" href="#skills">skills</a>
+                </li>
+                <li><a class="menuItem ham-menu" href="#portfolio">portfolio</a>
+                </li>
+
+                <li><a class="menuItem ham-menu" href="#contact">contact</a>
+                </li>
+                <!--   <li>
                 <a class="menuItem dayNight">&#x1F31A;</a>
             </li> -->
-        </ul>
+            </ul>
+        </div>
         <div class="hamburger" onClick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
 
         </div>
-
     </nav>
+    <div class="header-flowers">
+        <div class="flower-border-white"></div>
+        <img src="images/flowers.png" />
+    </div>
     <main>
         <section id="landing" class="landing">
-            <div class="hero">
-                <p class="hello">Hello, I'm</p>
-                <h2 class="fullName">Nicole Crayne</h2>
-                <p class="blurb">A front end web developer...</p>
-            </div>
-            <div class="hero-image">
-                <img src="images/Nicoley.jpg" alt="web developer relaxing with coffee" />
-                <div class="image-border">
+            <div class="hero-wrapper">
+                <div class="hero">
+                    <p class="hello">Hello, I'm</p>
+                    <h2 class="fullName">Nicole Crayne</h2>
+                    <p class="blurb">A front end web developer...</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/Nicoley.jpg" alt="web developer relaxing with coffee" />
+                    <div class="image-border">
+                    </div>
                 </div>
             </div>
             <div class="hero-bottom">
                 <img src="images/flowers.png" />
             </div>
-            <div class="hero-text">
-                <p>I love creating beautiful and functional websites
-                    that are easy to use
-                    and accessible to everyone.</p>
+            <!--          <div class="text-box">
+                <p>I love creating beautiful and functional websites that are easy to use and accessible to everyone.
+                </p> -->
             </div>
             <div class="hero-links">
                 <ul>
@@ -108,6 +114,13 @@
         </section>
         <section id="skills">
             <h2 class="sec-header">Skills</h2>
+            <div class="skills-blurb">
+                <p class="text-box">I'm a front-end web developer who loves designing and implementing
+                    beautiful, functional websites that are accessible to everyone.
+                    I am proficient in developing responsive, mobile-first websites with HTML, CSS and JavaScript, and
+                    am always working to further my craft by learning new techniques, technologies, and tools.
+                </p>
+            </div>
             <div class="skills">
                 <div class="skill">
                     <div class="skill-img">
@@ -190,7 +203,7 @@
         </section>
         <section id="contact" class="contact">
             <h2 class="sec-header">Get in touch...</h2>
-            <div class="hero-links">
+            <div class="hero-links contact">
                 <ul>
                     <li><a target="_blank" href="https://www.linkedin.com/in/nicole-crayne/">
                             <img src="images/icons8-linkedin-logo.svg" />
