@@ -265,6 +265,7 @@ nav a:visited {
     width: 4px;
     height: 6px;
     border: 2px solid black;
+    border-radius: 50%;
     animation: scroll 1.5s linear infinite;
 }
 
@@ -293,15 +294,15 @@ nav a:visited {
 
 @keyframes scroll {
     from {
-        transform: translateX(7px) translateY(0);
+        transform: translateX(7px) translateY(2px);
     }
 
     50% {
-        transform: translateX(7px) translateY(10px);
+        transform: translateX(7px) translateY(6px);
     }
 
     to {
-        transform: translateX(7px) translateY(0);
+        transform: translateX(7px) translateY(2px);
 
     }
 }
