@@ -17,6 +17,7 @@
     --color-bg-l: rgb(255, 253, 250);
     --color-bg-r: rgba(210, 141, 107, 0.1);
     --color-fg: var(--darkBlue);
+    --color-fg-hover: rgb(24, 65, 132);
     --color-frost: var(--frostedDark);
     --shodowBorderBox: 2px 2px 5px rgba(15, 30, 67, .2);
 }
@@ -25,6 +26,7 @@
     --color-bg-l: var(--darkBlue);
     --color-bg-r: var(--rightDarkBlue);
     --color-fg: var(--myWheat);
+    --color-fg-hover: rgb(169, 183, 206);
     --color-frost: var(--frostedWhite);
     --shodowBorderBox: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -135,7 +137,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100px;
+    height: 80px;
     width: 100%;
 }
 
@@ -185,12 +187,31 @@ nav a:visited {
     border: none;
 }
 
+@keyframes buttonJiggle {
+    from {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+.day-night-button:hover {
+    cursor: pointer;
+    animation: buttonJiggle 1s ease-in-out infinite;
+}
+
 .title {
     display: flex;
+    flex-direction: column;
     z-index: 100;
     padding: 10px;
     margin-left: 10vw;
-
 }
 
 .title a {
@@ -230,6 +251,16 @@ nav a:visited {
     justify-content: center;
     font-size: 1.8rem;
     text-decoration: none;
+}
+
+.menuItem:hover {
+    color: var(--color-fg-hover);
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bar1,
@@ -799,13 +830,15 @@ footer p {
         width: 100%;
     }
 
+
+
+
     .menu {
-        position: fixed;
-        height: 100px;
+        position: absolute;
+        height: 80px;
         width: 90%;
         margin: auto;
         transform: translateY(0);
-        margin-top: 10px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -817,7 +850,7 @@ footer p {
         position: relative;
     }
 
-    .ham-menu:hover::after {
+    /*     .ham-menu:hover::after {
         content: "";
         position: absolute;
         left: 0;
@@ -828,7 +861,7 @@ footer p {
         background-image: url("images/needle-underline.svg");
         background-position: bottom;
         background-repeat: no-repeat;
-    }
+    } */
 
     .hello {
         margin: 1rem;
@@ -871,13 +904,13 @@ footer p {
     .flower-border-white {
         position: absolute;
         width: 100%;
-        top: 107px;
+        top: 94px;
         border-bottom: 2px solid var(--coral);
     }
 
     .header-flowers img {
         position: absolute;
-        top: 108px;
+        top: 95px;
         width: 100%;
         transform: scaleX(-1) scaleY(-1);
         z-index: 1;
@@ -967,6 +1000,7 @@ footer p {
         max-width: 1200px;
         margin-left: -25vw;
     }
+
 
     .header-flowers {
         width: 50%;
