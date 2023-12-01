@@ -37,17 +37,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const topButton = document.querySelector(".top");
   window.onscroll = function () {
     scrollFunction();
-   
-  }
+  };
 
   function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topButton.style.display = "block";
-  } else {
-    topButton.style.display = "none";
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      topButton.style.display = "block";
+    } else {
+      topButton.style.display = "none";
+    }
   }
-  }
-
 });
-
-

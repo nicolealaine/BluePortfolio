@@ -34,10 +34,11 @@
 
     <link type="application/atom+xml" rel="alternate" href="" title="Your awesome title" />
     <script src="menu.js"></script>
+    <script src="dayNight.js"></script>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="light">
     <div class="scroll-top">
         <button class="top" onclick="topFunction()">top</button>
     </div>
@@ -57,17 +58,16 @@
 
                 <li><a class="menuItem ham-menu" href="#contact">contact</a>
                 </li>
-                <!--   <li>
-                <a class="menuItem dayNight">&#x1F31A;</a>
-            </li> -->
             </ul>
         </div>
         <div class="hamburger" onClick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-
         </div>
+        <button data-theme-toggle class="day-night-button" aria-label="day or night mode toggle"><img
+                class="day-night-image" src="images/moon-icon.png" width="40px"
+                alt="day or night mode toggle" /></button>
     </nav>
     <div class="header-flowers">
         <div class="flower-border-white"></div>
@@ -90,17 +90,14 @@
             <div class="hero-bottom">
                 <img src="images/flowers.png" />
             </div>
-            <!--          <div class="text-box">
-                <p>I love creating beautiful and functional websites that are easy to use and accessible to everyone.
-                </p> -->
             </div>
             <div class="hero-links">
                 <ul>
                     <li><a target="_blank" href="https://www.linkedin.com/in/nicole-crayne/">
-                            <img src="images/icons8-linkedin-logo.svg" />
+                            <img class="linkedin-image-landing" src="images/linkedin-dark.png" />
                         </a></li>
                     <li><a target="_blank" href="https://github.com/nicolealaine">
-                            <img src="images/github_logo.png" />
+                            <img class="github-image-landing" src="images/github-dark.png" />
                         </a></li>
                     <li class="resume-link"><a href="https://nicole.crayne.net/NicoleCrayneResume.pdf"
                             download>Resume</a></li>
@@ -141,27 +138,40 @@
             <div class="skills">
                 <div class="skill">
                     <div class="skill-img">
-                        <img src="images/icons8-html-logo.svg" alt="html 5" />
+                        <img class="html-image" src="images/html-dark.png" alt="html 5" />
                     </div>
                     <p>HTML5</p>
                 </div>
                 <div class="skill">
                     <div class="skill-img">
-                        <img src="images/icons8-css-logo.svg" alt="css 3" />
+                        <img class="css-image" src="images/css-dark.png" alt="css 3" />
                     </div>
                     <p>CSS3</p>
                 </div>
                 <div class="skill">
                     <div class="skill-img">
-                        <img src="images/icons8-javascript-250.svg" alt="javascript" />
+                        <img class="js-image" src="images/js-dark.png" alt="javascript" />
                     </div>
                     <p>JavaScript</p>
                 </div>
                 <div class="skill">
                     <div class="skill-img">
-                        <img src="images/icons8-git-logo.svg" alt="git" />
+                        <img class="git-image" src="images/git-dark.png" alt="git" />
                     </div>
                     <p>Git</p>
+                </div>
+                <div class="skill">
+                    <div class="skill-img">
+                        <img class="design-image" src="images/design-dark.png" alt="UI/UX Design" />
+                    </div>
+                    <p>UI/UX</p>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-img">
+                        <img class="figma-image" src="images/figma-dark.png" alt="figma" />
+                    </div>
+                    <p>Figma</p>
                 </div>
             </div>
         </section>
@@ -238,10 +248,10 @@
             <div class="hero-links contact">
                 <ul>
                     <li><a target="_blank" href="https://www.linkedin.com/in/nicole-crayne/">
-                            <img src="images/icons8-linkedin-logo.svg" />
+                            <img class="linkedin-image-contact" src="images/linkedin-dark.png" />
                         </a></li>
                     <li><a target="_blank" href="https://github.com/nicolealaine">
-                            <img src="images/github_logo.png" />
+                            <img class="github-image-contact" src="images/github-dark.png" />
                         </a></li>
                     <li class="resume-link"><a href="https://nicole.crayne.net/NicoleCrayneResume.pdf"
                             download>Resume</a></li>
