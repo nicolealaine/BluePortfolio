@@ -531,6 +531,7 @@ nav a:visited {
     margin-top: 20px;
     border-radius: 1em;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
@@ -581,7 +582,8 @@ nav a:visited {
     height: 100px;
     border-radius: 50%;
     border: 3px solid rgba(227, 79, 79, .7);
-    animation: circleBubble 3s ease-in-out infinite;
+    animation: circleBubble 4s ease-in-out infinite;
+    opacity: 0.8;
 }
 
 .sec-circle {
@@ -590,19 +592,20 @@ nav a:visited {
     height: 50px;
     border-radius: 50%;
     border: 3px solid rgba(227, 79, 79, .7);
+    opacity: 0.6;
 }
 
 .sec-circle-skills {
-    animation: circleBubbleSkills 2s .2s ease-in-out infinite;
+    animation: circleBubbleSkills 3s .2s ease-in-out infinite;
 
 }
 
 .sec-circle-port {
-    animation: circleBubblePort 2.2s ease-in-out infinite;
+    animation: circleBubblePort 3s ease-in-out infinite;
 }
 
 .sec-circle-contact {
-    animation: circleBubbleContact 2s ease-in-out infinite;
+    animation: circleBubbleContact 3s ease-in-out infinite;
 }
 
 @keyframes circleBubble {
