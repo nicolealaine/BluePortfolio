@@ -520,7 +520,6 @@ nav a:visited {
 .resume-link,
 .email-link {
     background-color: var(--color-fg);
-    padding: .7em;
     height: 70%;
     border-radius: 10px;
     display: flex;
@@ -532,6 +531,7 @@ nav a:visited {
 .email-link a {
     color: var(--color-bg-l);
     font-weight: 600;
+    padding: 1em;
 }
 
 .hero-cta {
@@ -675,8 +675,11 @@ nav a:visited {
 
 .pens p {
     padding: 20px;
-    text-align: center;
+    text-align: center
+}
 
+.pens a {
+    text-decoration: underline;
 }
 
 .sec-header {
