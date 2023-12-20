@@ -532,6 +532,21 @@ nav a:visited {
     font-weight: 600;
 }
 
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.hire-me {
+    font-family: var(--Kaushan);
+    font-size: 3rem;
+    transform: rotate(-5deg);
+    padding-top: 10px;
+}
+
 .call-to-action {
     margin: 10px auto;
     width: 90%;
@@ -1068,9 +1083,13 @@ footer p {
         margin: 0 30px;
     }
 
+    .hero-cta {
+        flex-direction: row;
+    }
+
     .call-to-action {
-        width: 50%;
-        transform: translateX(-45%)
+        width: 40%;
+        margin-left: 30px;
     }
 
     .hero-bottom {
