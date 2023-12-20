@@ -1,10 +1,10 @@
 /* Custom Properties */
 :root {
-    --myWheat: rgb(249, 237, 221);
+    --myWheat: #f9eddd;
     --lightGrey: rgb(191, 192, 192);
     --darkBlue: rgb(1, 26, 67);
     --rightDarkBlue: rgb(15, 30, 67);
-    --coral: rgb(197, 66, 66);
+    --coral: #e34f4f;
     --lightCoral: rgb(216, 131, 115);
     --shodowBorderBox: 4px 4px 5px var(--color-shadow);
     --frostedWhite: rgba(255, 255, 255, 0.1);
@@ -97,9 +97,9 @@ li {
     outline: none;
     border-radius: 10px;
     padding: .3em;
-    background-color: var(--coral);
+    background-color: var(--lightCoral);
     box-shadow: var(--shodowBorderBox);
-    color: var(--myWheat);
+    color: var(--color-bg-l);
     bottom: 30px;
     right: 30px;
     display: none;
@@ -826,8 +826,8 @@ nav a:visited {
 /* Footer  */
 
 footer {
-    background-color: var(--coral);
-    color: var(--myWheat);
+    background-color: var(--lightCoral);
+    color: var(--color-bg-l);
 
 }
 
