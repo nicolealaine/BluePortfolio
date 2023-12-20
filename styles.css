@@ -235,6 +235,7 @@ nav a:visited {
     flex-direction: column;
     justify-content: flex-end;
     transform: translateY(-150%);
+    transition: transform 0.2s;
     top: 0;
     z-index: 99;
     background: rgb(216, 131, 115);
@@ -243,13 +244,9 @@ nav a:visited {
     margin: 0;
 }
 
-.menuTransition {
-    transition: transform 0.2s;
-}
 
 .showMenu {
-    transition: transform 0.2s;
-    transform: translateY(20px);
+    transform: translateY(30px);
 }
 
 .menuItem {
