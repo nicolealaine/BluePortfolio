@@ -4,7 +4,7 @@
     --lightGrey: rgb(191, 192, 192);
     --darkBlue: rgb(1, 26, 67);
     --rightDarkBlue: rgb(15, 30, 67);
-    --coral: rgb(227, 79, 79);
+    --coral: rgb(197, 66, 66);
     --lightCoral: rgb(216, 131, 115);
     --shodowBorderBox: 4px 4px 5px var(--color-shadow);
     --frostedWhite: rgba(255, 255, 255, 0.1);
@@ -403,21 +403,23 @@ nav a:visited {
 }
 
 .hero {
-    width: 80%;
+    width: 90%;
     margin: 40px auto;
     margin-top: 50px;
     text-align: center;
     font-size: 1.2rem;
 }
 
+.hero h1 {}
+
 .hello {
-    margin: auto;
-    width: 75%;
+    display: block;
+    width: 100%;
     text-align: start;
 }
 
-.fullName {
-    width: 90%;
+.full-name {
+    display: block;
     text-align: start;
     margin: auto;
     font-family: var(--Kaushan);
@@ -425,7 +427,6 @@ nav a:visited {
 }
 
 .blurb {
-    width: 80%;
     text-align: end;
     margin: auto;
 }
@@ -865,7 +866,7 @@ footer p {
 
 @media screen and (min-width: 500px) {
     .hero {
-        width: 60%;
+        width: 80%;
     }
 
     .footer-flowers {
@@ -892,14 +893,18 @@ footer p {
 
     #portfolio::before,
     #skills::before {
-
         height: 100px;
-
     }
 
     .title {
         display: flex;
 
+    }
+
+    .full-name {
+        font-size: 3.5rem;
+        transform: translateX(10%);
+        padding-bottom: 20px;
     }
 
     .home-link {
@@ -979,19 +984,6 @@ footer p {
         position: relative;
     }
 
-    /*     .ham-menu:hover::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background-size: contain;
-        height: 10px;
-        width: 100%;
-        background-image: url("images/needle-underline.svg");
-        background-position: bottom;
-        background-repeat: no-repeat;
-    } */
-
     .hello {
         margin: 1rem;
     }
@@ -999,8 +991,6 @@ footer p {
     .hero {
         margin-top: 100px;
     }
-
-
 
     .hero-image img {
         width: 80%;
@@ -1015,9 +1005,6 @@ footer p {
         top: -2%;
         left: 12%;
     }
-
-
-
 
     .footer-flowers {
         width: 100%;
@@ -1058,8 +1045,8 @@ footer p {
         width: 100%;
     }
 
-    .hero h1 {
-        display: inline-block;
+    .full-name {
+        display: block;
         font-size: 4rem;
     }
 
