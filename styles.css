@@ -64,7 +64,10 @@ body {
 }
 
 p {
+    text-align: left;
     line-height: 1.5em;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-family: var(--font-basic);
 
 }
 
@@ -161,16 +164,16 @@ nav a {
     padding: .5em;
     padding-left: 0;
     margin-bottom: 0;
-    color: var(--color-fg);
+    color: var(--myWheat);
 }
 
 nav a:hover,
 nav a:active {
-    color: var(--color-fg);
+    color: var(--myWheat);
 }
 
 nav a:visited {
-    color: var(--color-fg);
+    color: var(--myWheat);
 }
 
 /* MHamburger enu Button  */
@@ -438,6 +441,7 @@ nav a:visited {
     width: 80%;
     margin: auto;
     border-radius: 25% 5% 25% 5%;
+    box-shadow: var(--shodowBorderBox);
 }
 
 .image-border {
@@ -486,7 +490,7 @@ nav a:visited {
 }
 
 .hero-links {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -499,31 +503,43 @@ nav a:visited {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     padding: 10px;
     margin: 0;
 }
 
 .hero-links img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     color: black;
 }
 
-.resume-link {
+.resume-link,
+.email-link {
     background-color: var(--color-fg);
-    padding: .5em;
+    padding: .7em;
+    height: 70%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-
-.resume-link a {
+.resume-link a,
+.email-link a {
     color: var(--color-bg-l);
     font-weight: 600;
+}
+
+.call-to-action {
+    margin: 10px auto;
+    width: 90%;
+    text-align: left;
+}
+
+.get-in-touch {
+    text-decoration: underline;
 }
 
 .skills {
@@ -557,7 +573,6 @@ nav a:visited {
 .skill p {
     padding: 0;
     margin: 0;
-    font-size: 1.2rem;
 }
 
 .portfolio-wrapper {
@@ -572,7 +587,7 @@ nav a:visited {
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 95%;
 }
 
 .portfolio-details {
@@ -593,8 +608,6 @@ nav a:visited {
 .portfolio-details>ul>li {
     margin: 10px;
     line-height: 1.5em;
-    font-size: 1.2rem;
-    font-family: var(--font-basic);
 }
 
 .project-button {
@@ -641,11 +654,8 @@ nav a:visited {
 
 
 .pens p {
-    text-align: center;
     padding: 20px;
-    line-height: 1.5em;
-    font-size: 1.2rem;
-    font-family: var(--font-basic);
+
 }
 
 .sec-header {
@@ -806,7 +816,6 @@ footer {
 }
 
 footer p {
-    text-align: center;
     padding: 1em;
     margin: 0;
     font-size: 1.1em;
@@ -1051,12 +1060,17 @@ footer p {
 
 
     .hero-links {
-        width: 40%;
+        width: 50%;
         margin-left: 30px
     }
 
     .hero-links ul li {
         margin: 0 30px;
+    }
+
+    .call-to-action {
+        width: 50%;
+        transform: translateX(-45%)
     }
 
     .hero-bottom {
