@@ -407,7 +407,6 @@ nav a:visited {
     font-size: 1.2rem;
 }
 
-.hero h1 {}
 
 .hello {
     display: block;
@@ -420,6 +419,7 @@ nav a:visited {
     text-align: start;
     margin: auto;
     font-family: var(--Kaushan);
+    font-weight: 500;
     font-size: 2.5rem;
 }
 
@@ -487,6 +487,10 @@ nav a:visited {
     margin: auto;
 }
 
+.skills-blurb p {
+    padding: 20px;
+}
+
 .hero-links {
     width: 100%;
     margin: auto;
@@ -541,6 +545,7 @@ nav a:visited {
 .hire-me {
     font-family: var(--Kaushan);
     font-size: 3rem;
+    font-weight: 500;
     transform: rotate(-5deg);
     padding-top: 10px;
 }
@@ -811,10 +816,10 @@ nav a:visited {
     box-shadow: var(--shodowBorderBox);
 }
 
-.penlink {
+.pens {
     text-align: center;
     font-size: 1.4rem;
-    margin-top: 0;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
@@ -890,7 +895,7 @@ footer p {
 
     #portfolio::before,
     #skills::before {
-        height: 100px;
+        height: 50px;
     }
 
     .title {
@@ -1155,8 +1160,7 @@ footer p {
     }
 
     .skills-blurb {
-        width: 50%;
-        margin: auto;
+        width: 60%;
         font-size: 1.2rem;
     }
 
