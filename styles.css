@@ -9,6 +9,7 @@
     --shodowBorderBox: 4px 4px 5px var(--color-shadow);
     --frostedWhite: rgba(255, 255, 255, 0.1);
     --frostedDark: rgba(209, 84, 20, .1);
+    --font-basic: Verdana, Geneva, Tahoma, sans-serif;
 
     --Kaushan: "Kaushan Script";
 }
@@ -436,14 +437,14 @@ nav a:visited {
     display: block;
     width: 80%;
     margin: auto;
-    border-radius: 2rem;
+    border-radius: 25% 5% 25% 5%;
 }
 
 .image-border {
     position: absolute;
     width: 80%;
     height: 100%;
-    border-radius: 2rem;
+    border-radius: 4rem 1rem;
     border: 3px solid var(--lightCoral);
     box-shadow: 1px 1px 3px var(--coral);
     top: -2%;
@@ -476,7 +477,7 @@ nav a:visited {
     padding: .5em 1em;
     margin: auto;
     margin-top: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-basic);
 }
 
 .skills-blurb {
@@ -559,7 +560,93 @@ nav a:visited {
     font-size: 1.2rem;
 }
 
+.portfolio-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
 
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.portfolio-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 70px;
+    border-radius: 2rem;
+}
+
+.portfolio-details h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-details p,
+.portfolio-details>ul>li {
+    margin: 10px;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+    font-family: var(--font-basic);
+}
+
+.project-button {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--color-fg);
+    color: var(--color-bg-l);
+}
+
+.project-button:hover {
+    box-shadow: var(--shodowBorderBox);
+    transform: translate(-1px, -1px);
+    opacity: 0.9;
+}
+
+
+.portfolio-card {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+
+}
+
+.portfolio-card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 2rem;
+    box-shadow: var(--shodowBorderBox);
+    transition: 0.2s ease-in-out;
+}
+
+.portfolio-card img:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+}
+
+
+
+.pens p {
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+    font-family: var(--font-basic);
+}
 
 .sec-header {
     font-family: "Raleway";
@@ -602,6 +689,10 @@ nav a:visited {
 
 .sec-circle-port {
     animation: circleBubblePort 3s ease-in-out infinite;
+}
+
+.sec-circle-pens {
+    animation: circleBubbleSkills 3s ease-in-out infinite;
 }
 
 .sec-circle-contact {
@@ -886,14 +977,17 @@ footer p {
         position: absolute;
         width: 80%;
         height: 100%;
-        border-radius: 2rem;
+        border-radius: 10rem 2rem 10rem 2rem;
         border: 3px solid var(--lightCoral);
         top: -2%;
         left: 12%;
     }
 
+
+
+
     .footer-flowers {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -976,6 +1070,22 @@ footer p {
         border-radius: 2rem;
     }
 
+    .portfolio-item {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 50px;
+
+    }
+
+    .portfolio-card {
+        width: 100%;
+    }
+
+    .portfolio-details {
+        padding: 20px;
+    }
+
     .sec-header {
         font-size: 2.5rem;
         padding: 1em;
@@ -1039,6 +1149,10 @@ footer p {
     .hero-image {
         width: 80%;
 
+    }
+
+    .portfolio-wrapper {
+        width: 80%
     }
 
     .hero-bottom {
