@@ -36,6 +36,7 @@
 - HTML
 - CSS
 - JavaScript
+- Vite
 
 ## Installation
 1. Clone the repository: git clone https://github.com/nicolec/crayne-personal-website.git
