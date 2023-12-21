@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [Features](#features)
-- [Screenshots)(#screenshots)
+- [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 
