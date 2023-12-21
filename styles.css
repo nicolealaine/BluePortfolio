@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/kaushanscript/v16/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* Custom Properties */
 :root {
     --myWheat: #f9eddd;
@@ -10,6 +28,8 @@
     --frostedWhite: rgba(255, 255, 255, 0.1);
     --frostedDark: rgba(209, 84, 20, .1);
     --font-basic: Verdana, Geneva, Tahoma, sans-serif;
+
+
 
     --Kaushan: "Kaushan Script";
 }
@@ -176,7 +196,7 @@ nav a:visited {
     color: var(--myWheat);
 }
 
-/* MHamburger enu Button  */
+/* MHamburger menu Button  */
 .hamburger {
     display: inline-block;
     position: fixed;
@@ -286,10 +306,6 @@ nav a:visited {
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-}
-
-.home-link {
-    display: block;
 }
 
 @keyframes bounce-up {
@@ -912,25 +928,6 @@ footer p {
         padding-bottom: 20px;
     }
 
-    .home-link {
-        display: none;
-    }
-
-
-
-    /*     .dayNight {
-        display: block;
-        animation: bounce-side 2s ease infinite;
-        background-color: var(--medBlue);
-        background: radial-gradient(circle, var(--myWheat) 20%, var(--medBlue) 70%);
-        transition: 1s;
-    }
-
-    .dayNight:hover {
-        background: radial-gradient(circle, var(--myWheat) 30%, var(--medBlue) 72%);
-        transition: 1s;
-    } */
-
     .hamburger {
         display: none;
     }
@@ -1059,7 +1056,7 @@ footer p {
         width: 100%;
         height: 400px;
         margin: auto;
-        margin-top: 250px;
+        margin-top: 120px;
         margin-bottom: 100px;
         display: flex;
         flex-direction: row;
