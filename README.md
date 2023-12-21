@@ -24,8 +24,11 @@
 - Contact info for reaching out to Nicole
 
 ## Screenshots
+![image](https://github.com/nicolealaine/BluePortfolio/assets/29171814/4dd739bd-663d-4deb-99de-69d05fd20c2b)
 ![image](https://github.com/nicolealaine/BluePortfolio/assets/29171814/13cc70db-9fc8-4b03-b0e9-ba5814340302)
 ![image](https://github.com/nicolealaine/BluePortfolio/assets/29171814/ce85e34f-ce22-4777-b79a-c34476e8f2c0)
+
+
 
 
 
