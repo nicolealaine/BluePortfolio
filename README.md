@@ -1,7 +1,11 @@
 # Nicole Crayne’s Personal Website
 
 > This is a personal website for Nicole Crayne. It showcases her portfolio and contact information. It was created as both a means of displaying a portfolio of web development, and as a portfolio piece itself.
-> It has been optimized for performance according to the most recent practices. In addition to the development practice, this project also was an opportunity to practice designing layouts, and choosing fonts, colors, etc. 
+> 
+> The use of vanilla Javascript reduces load times associated with front-end frameworks. It has been optimized for performance according to the most recent practices, such as using modern image formats (webp) and dynamic image rendering. 
+>
+> In addition to the development practice, this project also was an opportunity to practice designing layouts, and choosing fonts, colors, etc. 
+>
 > You can see it hosted at [nicole.crayne.com](https://nicole.crayne.com).
 
 ## Table of Contents
