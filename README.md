@@ -24,8 +24,11 @@
 - Contact info for reaching out to Nicole
 
 ## Screenshots
+![image](https://github.com/nicolealaine/BluePortfolio/assets/29171814/4dd739bd-663d-4deb-99de-69d05fd20c2b)
 ![image](https://github.com/nicolealaine/BluePortfolio/assets/29171814/13cc70db-9fc8-4b03-b0e9-ba5814340302)
 ![image](https://github.com/nicolealaine/BluePortfolio/assets/29171814/ce85e34f-ce22-4777-b79a-c34476e8f2c0)
+
+
 
 
 
@@ -33,8 +36,4 @@
 - HTML
 - CSS
 - JavaScript
-
-## Installation
-1. Clone the repository: git clone https://github.com/nicolec/crayne-personal-website.git
-2. Navigate to the project directory: cd crayne-personal-website
-3. Open index.html in your preferred browser.
+- Vite
