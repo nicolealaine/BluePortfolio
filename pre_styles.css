@@ -888,10 +888,18 @@ nav a:visited {
     line-height: 1.5em;
 }
 
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
 .project-button {
     margin-top: 2rem;
     padding: 1rem;
-    width: 50%;
+    width: auto;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
