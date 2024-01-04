@@ -144,7 +144,7 @@ li {
 
 section {
     width: 95%;
-    min-width: 350px;
+
     margin: auto;
 }
 
@@ -831,33 +831,38 @@ nav a:visited {
 }
 
 .portfolio-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
     align-items: center;
-    width: 100%;
+    width: 95%;
     margin: auto;
 }
 
-.portfolio-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
+.portfolio-card {
+
+    border-radius: 2rem;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    width: 95%;
+    background-color: white;
+
+    & img {
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 2rem 2rem 0 0;
+    }
 }
 
+.project-name {
+    padding: 0.5rem 0;
+    color: var(--color-bg-l);
+    text-align: center;
+
+}
+
+/* 
 .portfolio-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -920,35 +925,7 @@ nav a:visited {
     opacity: 0.9;
 }
 
-
-.portfolio-card {
-    width: 100%;
-    height: auto;
-    border-radius: 2rem;
-
-}
-
-.portfolio-card img {
-    width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
-    border-radius: 2rem;
-    -webkit-box-shadow: var(--shodowBorderBox);
-    box-shadow: var(--shodowBorderBox);
-    -webkit-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-}
-
-.portfolio-card img:hover {
-    -webkit-transform: translate(-2px, -2px);
-    -ms-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px);
-    -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
-    opacity: 0.7;
-}
-
+ */
 
 
 .pens p {
@@ -1503,19 +1480,6 @@ footer p {
         display: block;
         margin: auto;
         border-radius: 2rem;
-    }
-
-    .portfolio-item {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        width: 100%;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        margin-top: 50px;
-
     }
 
     .portfolio-card {
