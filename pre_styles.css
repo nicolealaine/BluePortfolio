@@ -25,7 +25,7 @@
 
 /* Custom Properties */
 :root {
-    --myWheat: #f9eddd;
+    --myWheat: hsl(34, 70%, 92%);
     --lightGrey: rgb(191, 192, 192);
     --darkBlue: rgb(1, 26, 67);
     --rightDarkBlue: rgb(15, 30, 67);
@@ -633,7 +633,7 @@ nav a:visited {
     position: absolute;
     width: 80%;
     height: 100%;
-    border-radius: 4rem 1rem;
+    border-radius: 10rem 2rem 10rem 2rem;
     border: 3px solid var(--lightCoral);
     -webkit-box-shadow: 1px 1px 3px var(--coral);
     box-shadow: 1px 1px 3px var(--coral);
@@ -1407,22 +1407,24 @@ footer p {
 
     .header-flowers {
         display: block;
-        width: 60vw;
-        margin-left: 50%;
+        width: 40vw;
+        margin-left: 60%;
         position: relative;
     }
 
     .flower-border-white {
         position: absolute;
-        width: 100%;
+        width: 80%;
+        right: 0;
         top: 94px;
         border-bottom: 2px solid var(--coral);
     }
 
     .header-flowers img {
         position: absolute;
+        right: 0;
         top: 95px;
-        width: 100%;
+        width: 80%;
         -webkit-transform: scaleX(-1) scaleY(-1);
         -ms-transform: scaleX(-1) scaleY(-1);
         transform: scaleX(-1) scaleY(-1);
@@ -1558,7 +1560,7 @@ footer p {
     .header-flowers {
         width: 50%;
         max-width: 1000px;
-        margin-left: 55%;
+        margin-left: 50%;
     }
 
     .hero h2 {
@@ -1586,7 +1588,6 @@ footer p {
 
     .hero-image {
         width: 80%;
-
     }
 
     .portfolio-wrapper {
@@ -1599,7 +1600,6 @@ footer p {
 
 }
 
-@media screen and (min-width: 1800px) {}
 
 @media screen and (min-width: 2000px) {
 
@@ -1611,8 +1611,8 @@ footer p {
         height: 700px;
     }
 
-    .header-flowers img {
-        margin-right: -50vw;
+    .header-flowers {
+        right: -5vw;
     }
 
     .hero {
