@@ -152,14 +152,8 @@ section {
     text-align: center;
 }
 
-#portfolio::before,
-#skills::before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin-top: 100px;
-    visibility: hidden;
-}
+
+
 
 #landing {
 
@@ -590,7 +584,7 @@ nav a:visited {
     margin: 40px auto;
     margin-top: 50px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 
@@ -633,7 +627,7 @@ nav a:visited {
     position: absolute;
     width: 80%;
     height: 100%;
-    border-radius: 10rem 2rem 10rem 2rem;
+    border-radius: 5rem 1rem 5rem 1rem;
     border: 3px solid var(--lightCoral);
     -webkit-box-shadow: 1px 1px 3px var(--coral);
     box-shadow: 1px 1px 3px var(--coral);
@@ -1180,7 +1174,7 @@ nav a:visited {
 
 .pens {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-top: 60px;
     margin-bottom: 30px;
 }
@@ -1255,9 +1249,12 @@ footer p {
         width: 80%;
     }
 
-    #portfolio::before,
     #skills::before {
+        content: "";
+        display: block;
         height: 50px;
+        margin-top: 50px;
+        visibility: hidden;
     }
 
     .title {
@@ -1324,9 +1321,6 @@ footer p {
         width: 100%;
     }
 
-
-
-
     .menu {
         position: absolute;
         height: 80px;
@@ -1346,7 +1340,6 @@ footer p {
         -ms-flex-pack: end;
         justify-content: flex-end;
         background: transparent;
-
     }
 
     .ham-menu {
@@ -1359,6 +1352,7 @@ footer p {
 
     .hero {
         margin-top: 100px;
+        font-size: 1.2rem;
     }
 
     .hero-image img {
@@ -1373,6 +1367,10 @@ footer p {
         border: 3px solid var(--lightCoral);
         top: -2%;
         left: 12%;
+    }
+
+    .pens {
+        font-size: 1.4rem;
     }
 
     .footer-flowers {
